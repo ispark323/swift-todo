@@ -9,16 +9,13 @@
 import SwiftUI
 
 struct TaskListView: View {
+    let tasks = testDataTasks
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                    Image(systemName: "circle")
-                        .resizable()
-                        .frame(width: 20, height: 20)
-                    VStack {
-                        Text("Task here")
-                    }
+                List(tasks) { task in
+                    TaskCell(task: task)
                 }
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                     HStack {
@@ -36,5 +33,20 @@ struct TaskListView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         TaskListView()
+    }
+}
+
+struct TaskCell: View {
+    let task: Task
+    
+    var body: some View {
+        HStack {
+            Image(systemName: "circle")
+                .resizable()
+                .frame(width: 20, height: 20)
+            VStack {
+                Text(task.title)
+            }
+        }
     }
 }
