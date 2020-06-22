@@ -14,6 +14,8 @@
 		DBFC266324A088F300673E11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFC266224A088F300673E11 /* Preview Assets.xcassets */; };
 		DBFC266624A088F300673E11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFC266424A088F300673E11 /* LaunchScreen.storyboard */; };
 		DBFC266F24A0938F00673E11 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC266E24A0938F00673E11 /* Task.swift */; };
+		DBFC267424A0A13600673E11 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC267324A0A13600673E11 /* TaskCellViewModel.swift */; };
+		DBFC267624A0A65800673E11 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC267524A0A65800673E11 /* TaskListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		DBFC266524A088F300673E11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBFC266724A088F300673E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBFC266E24A0938F00673E11 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		DBFC267324A0A13600673E11 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
+		DBFC267524A0A65800673E11 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			children = (
 				DBFC267024A094D700673E11 /* App */,
 				DBFC266D24A0935A00673E11 /* Model */,
+				DBFC267224A0A0EC00673E11 /* ViewModels */,
 				DBFC267124A094E200673E11 /* Views */,
 				DBFC265F24A088F300673E11 /* Assets.xcassets */,
 				DBFC266424A088F300673E11 /* LaunchScreen.storyboard */,
@@ -100,6 +105,15 @@
 				DBFC265D24A088ED00673E11 /* TaskListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DBFC267224A0A0EC00673E11 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DBFC267324A0A13600673E11 /* TaskCellViewModel.swift */,
+				DBFC267524A0A65800673E11 /* TaskListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +191,8 @@
 				DBFC265A24A088ED00673E11 /* AppDelegate.swift in Sources */,
 				DBFC265C24A088ED00673E11 /* SceneDelegate.swift in Sources */,
 				DBFC265E24A088ED00673E11 /* TaskListView.swift in Sources */,
+				DBFC267424A0A13600673E11 /* TaskCellViewModel.swift in Sources */,
+				DBFC267624A0A65800673E11 /* TaskListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
